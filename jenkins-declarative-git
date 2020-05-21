@@ -1,0 +1,15 @@
+pipeline{
+
+    agent any
+    
+    stages{
+        
+        stage("git-scm check out"){
+            
+            steps{
+                
+                git 'https://github.com/kanchanaanil/jenkins.git'
+            }
+        }
+    }
+}
